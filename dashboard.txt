@@ -1,0 +1,299 @@
+ini adalah file html dengan nama file = duplicate.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- navbar -->
+        <header class="navbar">
+            <div><strong>My App</strong></div>
+            <div>Halo, Udel Subagjo</div>
+        </header>
+
+        <!-- main: sidebar + content -->
+        <div class="main">
+            <aside class="sidebar" id="sidebar">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="label">Penjualan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-truck"></i>
+                            <span class="label">Pembelian</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span class="label">Biaya</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-box"></i>
+                            <span class="label">Produk</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-warehouse"></i>
+                            <span class="label">Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span class="label">Laporan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span class="label">Kas & Bank</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="label">Akun</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-industry"></i>
+                            <span class="label">Aset Tetap</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-address-book"></i>
+                            <span class="label">Kontak</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span class="label">Payrol</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cash-register"></i>
+                            <span class="label">POS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-route"></i>
+                            <span class="label">Distribusi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="label">Pengaturan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="label">FAQ</span>
+                        </a>    
+                    </li>
+                </ul>
+
+                <!-- Tombol collape -->
+                 <button class="sidebar-toggle" type="button" id="sidebarToggle" title="Toggle Collapse">
+                    <span class="chev chev-left">&lt;</span>
+                    <span class="chev chev-right">&gt;</span>
+                 </button>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="content">
+                <h1>Dashboard</h1>
+
+                <section class="card">
+                    <h3>Summary</h3>
+                    <p>Ini adalah area konten. Nanti di sini bisa ada tabel, form, chart, dll.</p>
+                </section>
+
+                <section class="card">
+                    <h3>Aktivitas</h3>
+                    <p>Contoh card kedua.</p>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2026 MyApp — Powered Udel Subagjo
+        </footer>
+
+    </div>
+</body>
+</html>
+
+ini adalah file css = style.css
+
+/* 1) Reset untuk semua layout */
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2) Layout utama: navbar di atas, sisanya area (sidebar + content) */
+.layout {
+    min-height: 100vh;           /* setinggi layar */
+    display: flex;
+    flex-direction: column;     /* navbar -> main -> footer */
+}
+
+/* 3) Navbar */
+.navbar {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    position: sticky;           /* tetap di atas saat scroll */
+    top: 0;
+}
+
+/* 4) Area tengah: sidebar + content */
+.main {
+    flex: 1;                    /* ngisi sisa tinggi */
+    display: flex;              /* bikin 2 kolom */
+    min-height: 0;              /* penting biar scroll area benar */
+}
+
+.sidebar {
+    width: 240px;
+    border-right: 1px solid #ddd;
+    padding: 16px;
+    background: #f7f7f7;
+    overflow: auto;             /* sidebar bisa scroll */
+}
+
+.content {
+    flex: 1;                     /* kolom konten ngisi sisa lebar */
+    padding: 16px;
+    overflow: auto;             /* konten bisa scroll */
+    background: #f7f7f7;
+}
+
+/* 5) Footer */
+.footer {
+    padding: 12px 16px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    text-align: center;
+}
+
+/* 6) Menu sidebar */
+.menu {
+    list-style: none;           /* hilangkan bullet */
+    padding: 0;                 /* hilangkan padding default */
+    margin: 0;                  /* hilangkan padding default */
+}
+
+.menu li {
+    margin-bottom: 1px;        /* jarak konsisten antar menu */
+    font-size: 0.80em;
+}
+
+.menu li a {
+    display: flex;              /* fleksibel untuk icon + teks */
+    align-items: center;        /* teks selalu tengah vertikal */
+
+    height: 44px;               /* TINGGI TETAP → kunci konsistensi */
+    padding: 0 12px;            /* jarak kiri-kanan */
+
+    text-decoration: none;      /* hilangkan garis bawah link */
+    color: #222;              /* warna teks */
+    border-radius: 10px;        /* sudut membulat */
+    gap: 10px;
+}    
+
+.menu li a:hover {
+    background: #eaeaea;
+}
+
+/* 7) Contoh “card” di content */
+.card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+/* 8) Tombol toggle */
+.sidebar-toggle {
+    margin-top: 10px;
+    height: 44px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-toggle:hover {
+    background: #eaeaea;
+}
+
+/* default: sidebar normal → tampilkan "<", sembunyikan ">" */
+.chev-right {display: none;}
+
+/* saat sidebar collapsed → tampilkan ">", sembunyikan "<" */
+.sidebar.collapsed .chev-left {display: none;}
+.sidebar.collapsed .chev-right {display: inline;}
+
+/* efek collapse (minimal) */
+.sidebar.collapsed {
+    width: 70px;                        /* sidebar mengecil */
+    padding: 16px 10px;
+}
+
+/* opsional: sembunyikan teks menu saat collapsed */
+.sidebar.collapse .menu li a span.label {
+    display: none;
+}
+
+ini adalah file js = app.js
+
+const sidebar = document.getElementById("sidebar");
+const btn = document.getElementById("sidebarToggle");
+
+btn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
