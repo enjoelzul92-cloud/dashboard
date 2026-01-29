@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="layout">
+
         <!-- navbar -->
         <header class="navbar">
             <div><strong>My App</strong></div>
@@ -18,97 +19,223 @@
         <!-- main: sidebar + content -->
         <div class="main">
             <aside class="sidebar" id="sidebar">
+
+                <!-- side bar menu item -->
                 <ul class="menu">
+
+                    <!-- menu dashboard -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-chart-line"></i>
                             <span class="label">Dashboard</span>
                         </a>
                     </li>
+
+                    <!-- nav penjualan (minimal 5 dropdown level) -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="label">Penjualan</span>
                         </a>
                     </li>
-                    <li>
+
+                        <!-- menu-item level 1 penjualan (overview)  -->
+                        <ul class="menu-item" id="menu-item">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 2 penjualan (tagihan)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Tagihan
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 3 penjualan (pengiriman)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Pengiriman
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 4 penjualan (pemesanan)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Pemesanan
+                                </a>
+                            </li>
+                        
+                        <!-- menu-item level 5 penjualan (penawaran)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Penawaran
+                                </a>
+                            </li>    
+                        </ul>
+
+                    <!-- nav pembelian (minimal 5 dropdown level) -->
+                    <li>   
                         <a href="#">
                             <i class="fa-solid fa-truck"></i>
                             <span class="label">Pembelian</span>
                         </a>
                     </li>
+
+                    <!-- menu-item level 1 pembelian (overview)  -->
+                        <ul class="menu-item" id="menu-item">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 2 pembelian (tagihan)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Tagihan pembelian
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 3 pembelian (pengiriman)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Pengiriman pembelian
+                                </a>
+                            </li>
+
+                        <!-- menu-item level 4 pembelian (pemesanan)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Pemesanan pembelian
+                                </a>
+                            </li>
+                        
+                        <!-- menu-item level 5 pembelian (penawaran)  -->
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Penawaran pembelian
+                                </a>
+                            </li>    
+                        </ul>
+
+                    <!-- menu biaya-->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <span class="label">Biaya</span>
                         </a>
                     </li>
+
+                    <!-- menu produk -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-box"></i>
                             <span class="label">Produk</span>
                         </a>
                     </li>
+
+                    <!-- menu produksi -->
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-industry"></i>
+                            <span class="label">Produksi</span>
+                        </a>
+                    </li>
+
+                    <!-- menu inventory -->   
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-warehouse"></i>
                             <span class="label">Inventory</span>
                         </a>
                     </li>
+
+                    <!-- menu laporan -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-file-lines"></i>
                             <span class="label">Laporan</span>
                         </a>
                     </li>
+
+                    <!-- menu kas dan bank -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-building-columns"></i>
                             <span class="label">Kas & Bank</span>
                         </a>
                     </li>
+
+                    <!-- menu akun -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-user"></i>
                             <span class="label">Akun</span>
                         </a>
                     </li>
+
+                    <!-- menu aset tetap -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-industry"></i>
                             <span class="label">Aset Tetap</span>
                         </a>
                     </li>
+
+                    <!-- menu kontak -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-address-book"></i>
                             <span class="label">Kontak</span>
                         </a>
                     </li>
+
+                    <!-- menu Payrol -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-wallet"></i>
                             <span class="label">Payrol</span>
                         </a>
                     </li>
+
+                    <!-- menu POS -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-cash-register"></i>
                             <span class="label">POS</span>
                         </a>
                     </li>
+
+                    <!-- menu Distribusi -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-route"></i>
                             <span class="label">Distribusi</span>
                         </a>
                     </li>
+
+                    <!-- menu Pengaturan -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-gear"></i>
                             <span class="label">Pengaturan</span>
                         </a>
                     </li>
+
+                    <!-- menu FAQ -->
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-circle-question"></i>
